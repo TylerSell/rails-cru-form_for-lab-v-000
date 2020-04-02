@@ -20,7 +20,7 @@ class GenresController < ApplicationController
    
   def update
     genre = Genre.update(genre_params)
-    redirect_to genre_path(@genre)
+    redirect_to genre_path(genre)
   end
   
   def show 
